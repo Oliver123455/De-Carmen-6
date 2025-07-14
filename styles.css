@@ -1,0 +1,61 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fefcfe;
+  color: #333;
+  text-align: center;
+}
+
+h1 {
+  margin: 20px 0;
+}
+
+.malla {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px;
+  overflow-x: auto;
+}
+
+.semestre {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  min-width: 200px;
+  background-color: #f9f9ff;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.semestre h2 {
+  margin: 0;
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.ramo {
+  padding: 10px;
+  background-color: #e8ddff;
+  border-radius: 8px;
+  border: 1px solid #c4b3f2;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 14px;
+  opacity: 0.6;
+}
+
+.ramo.active {
+  background-color: #d4fbe6;
+  border-color: #96e4bd;
+  opacity: 1;
+}
+
+.ramo.completed {
+  background-color: #b0f3c2;
+  border-color: #71cfa1;
+  text-decoration: line-through;
+  color: #444;
+}
